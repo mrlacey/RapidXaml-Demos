@@ -1,1 +1,1 @@
-# RapidXaml-Demos
+# Rapid XAML Demos
