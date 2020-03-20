@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>RapidXamlDemo.MyUserControlAnalyzer</id>
+        <version>1.0.0</version>
+        <authors>Matt Lacey</authors>
+        <owners>MRLacey</owners>
+        <license type="expression">MIT</license>
+        <projectUrl>https://rapidxaml.dev</projectUrl>
+        <repository type="git" url="https://github.com/mrlacey/RapidXaml-Demos" />
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A simple custom XAML Analyzer for testing and demonstration purposes.</description>
+        <copyright>Copyright 2020 Matt Lacey Ltd.</copyright>
+        <tags>RapidXaml, XamlAnalyzer</tags>
+        <dependencies>
+            <group targetFramework="netstandard2.0">
+                <dependency id="RapidXamlCustomAnalysis" version="0.9.4-pre2" exclude="Build,Analyzers" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src=".\bin\release\netstandard2.0\MyUserControlAnalyzer.dll" target="lib\netstandard2.0\MyUserControlAnalyzer.dll" />
+    </files>
+</package>
