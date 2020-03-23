@@ -2,9 +2,9 @@
 
 namespace ExampleDemoAnalyzer
 {
-    public class MyUserControlAnalyzer : ICustomAnalyzer
+    public class MyControlAnalyzer : ICustomAnalyzer
     {
-        public string TargetType() => "MyUserControl";
+        public string TargetType() => "MyControl";
 
         public AnalysisActions Analyze(RapidXamlElement element)
         {
@@ -17,10 +17,10 @@ namespace ExampleDemoAnalyzer
                 return AnalysisActions.AddAttribute(
                     errorType: RapidXamlErrorType.Warning,
                     code: "RXD001",
-                    description: "Always set the 'Name' property on 'MyUserControl'.",
+                    description: "Always set the 'Name' property on 'MyControl'.",
                     actionText: "Add 'Name' attribute",
                     addAttributeName: "Name",
-                    addAttributeValue: "MyControl",
+                    addAttributeValue: "MyAwesomeControl",
                     moreInfoUrl: "https://github.com/mrlacey/RapidXaml-Demos/blob/master/rxd001.md"
                     );
             }
