@@ -6,7 +6,7 @@ namespace ExampleDemoAnalyzer
     {
         public string TargetType() => "MyUserControl";
 
-        public AnalysisActions Analyze(RapidXamlElement element)
+        public AnalysisActions Analyze(RapidXamlElement element, ExtraAnalysisDetails extraDetails)
         {
             if (element.ContainsAttribute("Name"))
             {

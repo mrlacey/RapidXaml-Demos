@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RapidXaml;
+using RapidXaml.TestHelpers;
 
 namespace ExampleDemoAnalyzer.Tests
 {
@@ -13,7 +14,7 @@ namespace ExampleDemoAnalyzer.Tests
 
             var testElement = CustomAnalysisTestHelper.StringToElement("<MyUserControl />");
 
-            var analysisResult = analyzer.Analyze(testElement);
+            var analysisResult = analyzer.Analyze(testElement, new ExtraAnalysisDetails());
 
             Assert.AreEqual(1, analysisResult.Actions.Count);
             Assert.AreEqual(ActionType.AddAttribute, analysisResult.Actions[0].Action);
@@ -27,7 +28,7 @@ namespace ExampleDemoAnalyzer.Tests
 
             var testElement = CustomAnalysisTestHelper.StringToElement("<MyUserControl Name=\"something\" />");
 
-            var analysisResult = analyzer.Analyze(testElement);
+            var analysisResult = analyzer.Analyze(testElement, new ExtraAnalysisDetails());
 
             Assert.IsTrue(analysisResult.IsNone);
         }
