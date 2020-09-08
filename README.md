@@ -4,4 +4,10 @@ This repository contains example and demo projects relating to the [Rapid XAML T
 
 ## Custom Analyzer
 
-This is an example [custom XAML Analyzer](https://rapidxaml.dev/custom-analysis) that is also [available as a NuGet package](https://www.nuget.org/packages/RapidXamlDemo.MyUserControlAnalyzer/). 
+This is an example [custom XAML Analyzer](https://rapidxaml.dev/custom-analysis) that is also [available as a NuGet package](https://www.nuget.org/packages/RapidXamlDemo.MyUserControlAnalyzer/).
+
+## Test projects
+
+### SymbolViewTestUwp
+
+Used to test the Symbol visualizer functionality in the Editor Extras package.

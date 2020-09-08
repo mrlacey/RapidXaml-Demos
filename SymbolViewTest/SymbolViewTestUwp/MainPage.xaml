@@ -1,0 +1,92 @@
+﻿<Page
+    x:Class="SymbolViewTestUwp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SymbolViewTestUwp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:fa="using:FontAwesome.UWP" xmlns:controls="using:SymbolViewTestUwp.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+
+
+
+        <Button Content="&#xe1cf;" />
+        <Button Content="&#xff;" FontFamily="Wingdings" />
+
+        <SymbolIcon Symbol="TwoBars" />
+        <SymbolIcon Symbol="AttachCamera" />
+        <SymbolIcon Symbol="CalendarReply" />
+        <SymbolIcon Symbol="Comment" />
+        <SymbolIcon Symbol="World" />
+
+        <!-- start of tag on different line from match -->
+        <SymbolIcon
+            Symbol="Like" />
+
+        <!-- Start and end tags on different lines from match-->
+        <SymbolIcon
+                Symbol="Emoji"
+            />
+
+        <!-- Attribute name and value match a known symbol but the wrong element name -->
+        <controls:NotSymbolIcon Symbol="TwoBars" />
+
+        <FontIcon Glyph="&#xe1cf;" />
+        <FontIcon Glyph="&#xe1ce;" FontFamily="Segoe MDL2 Assets" />
+        
+        <FontIcon Glyph="&#xff;" FontFamily="Wingdings" />
+
+        <FontIcon Glyph="&#x4e;"
+                  FontFamily="Wingdings" />
+
+        <FontIcon
+
+            Glyph="&#x058F;"
+
+            FontFamily="Segoe UI" 
+
+                  />
+
+
+
+        <Button Content="&#xe1ce;" FontFamily="Segoe MDL2 Assets" />
+
+        <Button Content="&#xff;" FontFamily="Wingdings" />
+
+
+        <fa:FontAwesome Icon="Music" />
+        
+        <fa:FontAwesome 
+            Icon="Facebook" />
+        
+        <fa:FontAwesome 
+            Icon="Wifi"
+                        />
+
+        <controls:NotFontAwesome Icon="Wifi" />
+
+
+
+
+
+		<!-- Works with named values in SymbolIcon -->
+		<SymbolIcon Symbol="Comment" />
+        <SymbolIcon Symbol="World" />
+
+		<!-- Works with FontIcon including setting the FontFamily -->
+		<FontIcon Glyph="&#xe1cf;" />
+		<FontIcon Glyph="&#xff;" FontFamily="Wingdings" />
+
+		<!-- Works with any element when setting a single unicode value for a property -->
+		<Button Content="&#xe1ce;" FontFamily="Segoe MDL2 Assets" />
+
+		<!-- Also works with FontAwesome -->
+		<fa:FontAwesome Icon="Music" />
+		<fa:FontAwesome Icon="Facebook" />
+
+
+	</StackPanel>
+</Page>
