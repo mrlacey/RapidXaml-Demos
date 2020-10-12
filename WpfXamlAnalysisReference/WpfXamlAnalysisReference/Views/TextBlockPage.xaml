@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="WpfXamlAnalysisReference.Views.TextBlockPage"
+    Style="{DynamicResource MahApps.Styles.Page}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:properties="clr-namespace:WpfXamlAnalysisReference.Properties"
+    mc:Ignorable="d"
+    d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <StackPanel>
+
+            <!-- The following show handling of different types of hardcoded attribute values -->
+
+            <!-- An inline attribute -->
+            <TextBlock Text="HardCoded1" />
+
+            <!-- Default content -->
+            <TextBlock>HardCoded2</TextBlock>
+
+            <!-- Attribute as child element -->
+            <TextBlock>
+                <TextBlock.Text>HardCoded3</TextBlock.Text>
+            </TextBlock>
+
+            <!-- This TextBlock already has a localized resource -->
+            <TextBlock Text="{x:Static properties:Resources.ExampleTextBlockText}" />
+
+            <!-- This TextBlock has a bound value for Text and so shouldn't be localized -->
+            <TextBlock Text="{Binding this}" />
+
+          
+        </StackPanel>
+    </Grid>
+</Page>
