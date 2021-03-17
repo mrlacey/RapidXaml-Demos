@@ -126,6 +126,9 @@
     <Compile Include="SampleViews\ButtonPage.xaml.cs">
       <DependentUpon>ButtonPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SampleViews\CheckBoxPage.xaml.cs">
+      <DependentUpon>CheckBoxPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -152,6 +155,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="SampleViews\ButtonPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SampleViews\CheckBoxPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

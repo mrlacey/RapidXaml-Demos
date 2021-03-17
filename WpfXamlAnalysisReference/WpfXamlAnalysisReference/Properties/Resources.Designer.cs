@@ -79,6 +79,15 @@ namespace WpfXamlAnalysisReference.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to resource file provided checkbox content.
+        /// </summary>
+        public static string ExampleCheckBoxContent {
+            get {
+                return ResourceManager.GetString("ExampleCheckBoxContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to This is example content for a label and comes from a resx file.
         /// </summary>
         public static string ExampleContentLabel {
