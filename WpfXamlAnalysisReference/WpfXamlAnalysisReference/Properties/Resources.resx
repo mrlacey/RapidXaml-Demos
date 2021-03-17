@@ -138,4 +138,7 @@
   <data name="ExampleTextBlockText" xml:space="preserve">
     <value>This is example text from a resource file</value>
   </data>
+  <data name="ExampleButtonContent" xml:space="preserve">
+    <value>This is example content from a resource file</value>
+  </data>
 </root>

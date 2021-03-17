@@ -61,6 +61,15 @@ namespace XFXamlAnalysisReference.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Example localized text for button.
+        /// </summary>
+        public static string ExampleButtonText {
+            get {
+                return ResourceManager.GetString("ExampleButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Example localized content.
         /// </summary>
         public static string ExampleContentLabel {

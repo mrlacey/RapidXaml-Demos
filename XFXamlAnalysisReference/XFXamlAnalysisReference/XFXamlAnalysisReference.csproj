@@ -16,6 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="ButtonPage.xaml.cs">
+      <DependentUpon>ButtonPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Resx\AppResources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

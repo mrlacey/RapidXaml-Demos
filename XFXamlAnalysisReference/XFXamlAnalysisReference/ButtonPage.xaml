@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamarinFormsXamlAnalysisReference.ButtonPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:resources="clr-namespace:XFXamlAnalysisReference.Resx"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <!--  The following show handling of different types of hardcoded attribute values  -->
+
+            <!--  An inline attribute  -->
+            <Button Text="HardCoded1" />
+
+            <!--  Attribute as child element  -->
+            <Button>
+                <Button.Text>HardCoded2</Button.Text>
+            </Button>
+
+            <!--  This Button already has a localized resource  -->
+            <Button Text="{x:Static properties:Resources.ExampleButtonText}" />
+
+            <!--  This Button has a bound value for Text and so shouldn't be localized  -->
+            <Button Text="{Binding this}" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

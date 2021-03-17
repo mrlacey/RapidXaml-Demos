@@ -1,5 +1,5 @@
 ﻿<views:GenericPage
-    x:Class="WpfXamlAnalysisReference.Views.TextBlockPage"
+    x:Class="WpfXamlAnalysisReference.Views.ButtonPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -16,21 +16,21 @@
             <!--  The following show handling of different types of hardcoded attribute values  -->
 
             <!--  An inline attribute  -->
-            <TextBlock Text="HardCoded1" />
+            <Button Content="HardCoded1" />
 
             <!--  Default content  -->
-            <TextBlock>HardCoded2</TextBlock>
-
+            <Button>HardCoded2</Button> 
+ 
             <!--  Attribute as child element  -->
-            <TextBlock>
-                <TextBlock.Text>HardCoded3</TextBlock.Text>
-            </TextBlock>
+            <Button>
+                <Button.Content>HardCoded3</Button.Content>
+            </Button>
 
-            <!--  This TextBlock already has a localized resource  -->
-            <TextBlock Text="{x:Static properties:Resources.ExampleTextBlockText}" />
+            <!--  This Button already has a localized resource  -->
+            <Button Content="{x:Static properties:Resources.ExampleButtonContent}" />
 
-            <!--  This TextBlock has a bound value for Text and so shouldn't be localized  -->
-            <TextBlock Text="{Binding this}" />
+            <!--  This Button has a bound value for Content and so shouldn't be localized  -->
+            <Button Content="{Binding this}" />
 
 
         </StackPanel>
