@@ -141,4 +141,7 @@
   <data name="ExampleButtonContent" xml:space="preserve">
     <value>This is example content from a resource file</value>
   </data>
+  <data name="ExampleContentLabel" xml:space="preserve">
+    <value>This is example content for a label and comes from a resx file</value>
+  </data>
 </root>

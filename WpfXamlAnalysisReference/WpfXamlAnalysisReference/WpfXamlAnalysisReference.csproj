@@ -33,6 +33,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Page Update="Views\LabelPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\ButtonPage.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
     </Page>

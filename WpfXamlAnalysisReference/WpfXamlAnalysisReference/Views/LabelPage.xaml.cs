@@ -1,8 +1,8 @@
 ﻿namespace WpfXamlAnalysisReference.Views
 {
-    public partial class ButtonPage : GenericPage
+    public partial class LabelPage : GenericPage
     {
-        public ButtonPage()
+        public LabelPage()
         {
             InitializeComponent();
             DataContext = this;

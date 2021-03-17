@@ -79,6 +79,15 @@ namespace WpfXamlAnalysisReference.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This is example content for a label and comes from a resx file.
+        /// </summary>
+        public static string ExampleContentLabel {
+            get {
+                return ResourceManager.GetString("ExampleContentLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to This is example text from a resource file.
         /// </summary>
         public static string ExampleTextBlockText {

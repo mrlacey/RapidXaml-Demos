@@ -28,6 +28,7 @@
 
             <!--  This Label has a bound value for Text and so shouldn't be localized  -->
             <Label Text="{Binding SomeText}" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
