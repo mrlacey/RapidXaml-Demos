@@ -77,5 +77,23 @@ namespace XFXamlAnalysisReference.Resx {
                 return ResourceManager.GetString("ExampleContentLabel", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A placeholder from resources.
+        /// </summary>
+        public static string ExampleEntryPlaceholder {
+            get {
+                return ResourceManager.GetString("ExampleEntryPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Some entry text from a resource.
+        /// </summary>
+        public static string ExampleEntryText {
+            get {
+                return ResourceManager.GetString("ExampleEntryText", resourceCulture);
+            }
+        }
     }
 }

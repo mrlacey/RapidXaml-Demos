@@ -123,4 +123,10 @@
   <data name="ExampleContentLabel" xml:space="preserve">
     <value>Example localized content</value>
   </data>
+  <data name="ExampleEntryPlaceholder" xml:space="preserve">
+    <value>A placeholder from resources</value>
+  </data>
+  <data name="ExampleEntryText" xml:space="preserve">
+    <value>Some entry text from a resource</value>
+  </data>
 </root>

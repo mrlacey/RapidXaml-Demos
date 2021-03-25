@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XFXamlAnalysisReference.EntryPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:resources="clr-namespace:XFXamlAnalysisReference.Resx">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--  The following show handling of different types of hardcoded attribute values  -->
+
+            <!--  This has a hardcoded value for text  -->
+            <Entry Keyboard="Default" Text="HardCoded value 1" />
+
+            <!--  This has a hardcoded value for Placeholder  -->
+            <Entry Keyboard="Default" Placeholder="HardCoded value 2" />
+
+            <!--  This has a hardcoded value for text (subelement)  -->
+            <Entry Keyboard="Default">
+                <Entry.Text>HardCoded value 3</Entry.Text>
+            </Entry>
+
+            <!--  This has a hardcoded value for placeholder (subelement)  -->
+            <Entry Keyboard="Default">
+                <Entry.Placeholder>HardCoded value 4</Entry.Placeholder>
+            </Entry>
+
+            <!--  This has a hardcoded values for Text and Placeholder  -->
+            <Entry
+                Keyboard="Default"
+                Placeholder="HardCoded value 5"
+                Text="Hardcoded value 6" />
+
+            <Entry
+                Keyboard="Default"
+                Placeholder="{x:Static resources:AppResources.ExampleEntryPlaceholder}"
+                Text="{x:Static resources:AppResources.ExampleEntryText}" />
+
+            <!--  The following show handling of an unspecified Keyboard -->
+
+            <!--  This doesn't have a keyboard or name specified (suggestion should be 'default')  -->
+            <Entry />
+
+            <!--  This doesn't have a keyboard specified (suggestion based on name should be 'Email')  -->
+            <Entry x:Name="EmailAddress" />
+
+            <!--  This doesn't have a keyboard specified (suggestion based on name should be 'Telephone')  -->
+            <Entry x:Name="PhoneNumber" />
+
+            <!--  This doesn't have a keyboard specified (suggestion based on name should be 'Telephone')  -->
+            <Entry x:Name="CellNumber" />
+
+            <!--  This doesn't have a keyboard specified (suggestion based on name should be 'Telephone')  -->
+            <Entry x:Name="UserMobileNumber" />
+
+            <!--  This doesn't have a keyboard specified (suggestion based on name should be 'Url')  -->
+            <Entry x:Name="WebsiteUrl" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

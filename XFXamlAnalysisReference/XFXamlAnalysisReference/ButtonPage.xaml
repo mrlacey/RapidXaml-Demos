@@ -21,7 +21,7 @@
             </Button>
 
             <!--  This Button already has a localized resource  -->
-            <Button Text="{x:Static properties:Resources.ExampleButtonText}" />
+            <Button Text="{x:Static resources:AppResources.ExampleButtonText}" />
 
             <!--  This Button has a bound value for Text and so shouldn't be localized  -->
             <Button Text="{Binding this}" />

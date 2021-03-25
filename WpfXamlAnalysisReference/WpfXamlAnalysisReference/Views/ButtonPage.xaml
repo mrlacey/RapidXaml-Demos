@@ -19,8 +19,8 @@
             <Button Content="HardCoded1" />
 
             <!--  Default content  -->
-            <Button>HardCoded2</Button> 
- 
+            <Button>HardCoded2</Button>
+
             <!--  Attribute as child element  -->
             <Button>
                 <Button.Content>HardCoded3</Button.Content>
