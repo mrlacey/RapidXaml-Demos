@@ -123,10 +123,22 @@
   <data name="ExampleContentLabel" xml:space="preserve">
     <value>Example localized content</value>
   </data>
+  <data name="ExampleEntryCellPlaceholder" xml:space="preserve">
+    <value>Placeholder from resournce file</value>
+  </data>
+  <data name="ExampleEntryCellText" xml:space="preserve">
+    <value>text from resource file</value>
+  </data>
   <data name="ExampleEntryPlaceholder" xml:space="preserve">
     <value>A placeholder from resources</value>
   </data>
   <data name="ExampleEntryText" xml:space="preserve">
     <value>Some entry text from a resource</value>
+  </data>
+  <data name="ExampleSwitchCellText" xml:space="preserve">
+    <value>text for switchcell from resource</value>
+  </data>
+  <data name="ExampleTableSectionTitle" xml:space="preserve">
+    <value>a resource based title</value>
   </data>
 </root>

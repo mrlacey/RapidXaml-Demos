@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XFXamlAnalysisReference.TableViewPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:resources="clr-namespace:XFXamlAnalysisReference.Resx">
+    <TableView>
+        <!--  The following show handling of different types of hardcoded attribute values  -->
+
+        <!--  An inline attribute  -->
+        <TableSection Title="hard coded1" />
+
+        <!--  Attribute as child element  -->
+        <TableSection>
+            <TableSection.Title>hardcoded2</TableSection.Title>
+        </TableSection>
+
+        <!--  This element already has a localized resource  -->
+        <TableSection Title="{x:Static resources:AppResources.ExampleTableSectionTitle}" />
+
+
+        <!--  This TableSection contains tests of EntryCell  -->
+        <TableSection>
+            <EntryCell Text="HardCoded1" />
+
+            <EntryCell Placeholder="HardCoded2" />
+
+            <EntryCell Placeholder="HardCoded3"
+                       Text="HardCoded3"  />
+
+            <!--  This element already has databound values  -->
+            <EntryCell Placeholder="{Binding MyPlaceholder}"
+                       Text="{Binding EnteredText}"  />
+
+            <!--  This element already has a localized resource  -->
+            <EntryCell Placeholder="{x:Static resources:AppResources.ExampleEntryCellText}"
+                       Text="{x:Static resources:AppResources.ExampleEntryCellPlaceholder}"  />
+
+        </TableSection>
+
+        <!--  This TableSection contains tests of SwitchCell  -->
+        <TableSection>
+            <SwitchCell Text="HardCoded1" />
+
+            <SwitchCell>
+                <SwitchCell.Text>HardCoded2</SwitchCell.Text>
+            </SwitchCell>
+
+            <!--  This element already has databound values  -->
+            <SwitchCell Text="{Binding OptionText}"  />
+
+            <!--  This element already has a localized resource  -->
+            <SwitchCell Text="{x:Static resources:AppResources.ExampleSwitchCellText}"  />
+
+        </TableSection>
+
+    </TableView>
+</ContentPage>

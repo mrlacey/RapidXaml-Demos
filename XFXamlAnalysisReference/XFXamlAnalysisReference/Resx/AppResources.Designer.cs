@@ -79,6 +79,24 @@ namespace XFXamlAnalysisReference.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Placeholder from resournce file.
+        /// </summary>
+        public static string ExampleEntryCellPlaceholder {
+            get {
+                return ResourceManager.GetString("ExampleEntryCellPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to text from resource file.
+        /// </summary>
+        public static string ExampleEntryCellText {
+            get {
+                return ResourceManager.GetString("ExampleEntryCellText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to A placeholder from resources.
         /// </summary>
         public static string ExampleEntryPlaceholder {
@@ -93,6 +111,24 @@ namespace XFXamlAnalysisReference.Resx {
         public static string ExampleEntryText {
             get {
                 return ResourceManager.GetString("ExampleEntryText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to text for switchcell from resource.
+        /// </summary>
+        public static string ExampleSwitchCellText {
+            get {
+                return ResourceManager.GetString("ExampleSwitchCellText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to a resource based title.
+        /// </summary>
+        public static string ExampleTableSectionTitle {
+            get {
+                return ResourceManager.GetString("ExampleTableSectionTitle", resourceCulture);
             }
         }
     }
