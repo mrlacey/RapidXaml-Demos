@@ -141,6 +141,9 @@
   <data name="ExampleSearchbarPlaceholder" xml:space="preserve">
     <value>this placeholder is from a resource</value>
   </data>
+  <data name="ExampleSwipeItemText" xml:space="preserve">
+    <value>Swipeitem text resource</value>
+  </data>
   <data name="ExampleSwitchCellText" xml:space="preserve">
     <value>text for switchcell from resource</value>
   </data>

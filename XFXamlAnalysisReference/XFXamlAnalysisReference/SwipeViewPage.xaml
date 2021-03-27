@@ -1,23 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:resources="clr-namespace:XFXamlAnalysisReference.Resx"
              x:Class="XamarinFormsXamlAnalysisReference.SwipeViewPage">
     <ContentPage.Content>
         <SwipeView>
             <SwipeView.LeftItems>
                 <SwipeItems>
-                    <SwipeItem Text="Favorite" />
-                    <SwipeItem Text="Delete" />
+                    <!--  The following show handling of different types of hardcoded attribute values  -->
+
+                    <!--  An inline attribute  -->
+                    <SwipeItem Text="HardCoded1" />
+
+                    <!--  Attribute as child element  -->
+                    <SwipeItem>
+                        <SwipeItem.Text>HardCoded2</SwipeItem.Text>
+                    </SwipeItem>
                 </SwipeItems>
             </SwipeView.LeftItems>
+            <SwipeView.RightItems>
+                <SwipeItems>
+                    <!--  This Item already has a localized resource  -->
+                    <SwipeItem Text="{x:Static resources:AppResources.ExampleSwipeItemText}" />
+                </SwipeItems>
+            </SwipeView.RightItems>
             <!-- Content -->
-            <Grid HeightRequest="60"
-                  WidthRequest="300"
-                  BackgroundColor="LightGray">
-                <Label Text="Swipe right"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center" />
-            </Grid>
         </SwipeView>
     </ContentPage.Content>
 </ContentPage>

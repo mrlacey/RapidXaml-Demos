@@ -133,6 +133,15 @@ namespace XFXamlAnalysisReference.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Swipeitem text resource.
+        /// </summary>
+        public static string ExampleSwipeItemText {
+            get {
+                return ResourceManager.GetString("ExampleSwipeItemText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to text for switchcell from resource.
         /// </summary>
         public static string ExampleSwitchCellText {
