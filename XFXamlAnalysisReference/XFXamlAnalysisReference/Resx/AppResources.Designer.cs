@@ -115,6 +115,15 @@ namespace XFXamlAnalysisReference.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to a resource based picker title.
+        /// </summary>
+        public static string ExamplePickerTitle {
+            get {
+                return ResourceManager.GetString("ExamplePickerTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to this placeholder is from a resource.
         /// </summary>
         public static string ExampleSearchbarPlaceholder {
