@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XFXamlAnalysisReference.SearchBarPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:resources="clr-namespace:XFXamlAnalysisReference.Resx"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <StackLayout>
+        <!--  The following show handling of different types of hardcoded attribute values  -->
+
+        <!--  An inline attribute  -->
+        <SearchBar Placeholder="Hardcoded1" />
+
+        <!--  Attribute as child element  -->
+        <SearchBar>
+            <SearchBar.Placeholder>Hardcoded2</SearchBar.Placeholder>
+        </SearchBar>
+
+        <!--  This Button already has a localized resource  -->
+        <SearchBar Placeholder="{x:Static resources:AppResources.ExampleSearchbarPlaceholder}" />
+         
+    </StackLayout> 
+</ContentPage>

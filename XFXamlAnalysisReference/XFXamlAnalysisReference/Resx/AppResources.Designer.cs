@@ -115,6 +115,15 @@ namespace XFXamlAnalysisReference.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to this placeholder is from a resource.
+        /// </summary>
+        public static string ExampleSearchbarPlaceholder {
+            get {
+                return ResourceManager.GetString("ExampleSearchbarPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to text for switchcell from resource.
         /// </summary>
         public static string ExampleSwitchCellText {
