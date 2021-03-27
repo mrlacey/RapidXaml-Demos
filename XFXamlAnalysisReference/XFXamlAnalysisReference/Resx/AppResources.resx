@@ -138,6 +138,9 @@
   <data name="ExamplePickerTitle" xml:space="preserve">
     <value>a resource based picker title</value>
   </data>
+  <data name="ExampleRadioButtonText" xml:space="preserve">
+    <value>Example localized text for a radiobutton</value>
+  </data>
   <data name="ExampleSearchbarPlaceholder" xml:space="preserve">
     <value>this placeholder is from a resource</value>
   </data>

@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="UwpXamlAnalysisReference.SampleViews.RadioButtonPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UwpXamlAnalysisReference.SampleViews"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DataContext="a string"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <StackPanel>
+
+            <!--  The following show handling of different types of hardcoded attribute values  -->
+
+            <!--  An inline attribute  -->
+            <RadioButton Content="HardCoded1" />
+
+            <!--  An inline attribute when a Uid has already been assigned  -->
+            <RadioButton x:Uid="MyRadioButton" Content="HardCoded1.5" />
+
+            <!--  Default content  -->
+            <RadioButton>HardCoded2</RadioButton>
+
+            <!--  Attribute as child element  -->
+            <RadioButton>
+                <RadioButton.Content>HardCoded3</RadioButton.Content>
+            </RadioButton>
+
+            <!--  This RadioButton has a bound value for Content and so shouldn't be localized  -->
+            <RadioButton Content="{Binding}" />
+
+        </StackPanel>
+    </Grid>
+</Page>

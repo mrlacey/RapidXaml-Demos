@@ -124,6 +124,15 @@ namespace XFXamlAnalysisReference.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Example localized text for a radiobutton.
+        /// </summary>
+        public static string ExampleRadioButtonText {
+            get {
+                return ResourceManager.GetString("ExampleRadioButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to this placeholder is from a resource.
         /// </summary>
         public static string ExampleSearchbarPlaceholder {

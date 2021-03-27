@@ -97,6 +97,15 @@ namespace WpfXamlAnalysisReference.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to content for a radiobutton but from a resource file.
+        /// </summary>
+        public static string ExampleContentRadioButton {
+            get {
+                return ResourceManager.GetString("ExampleContentRadioButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to This is example text from a resource file.
         /// </summary>
         public static string ExampleTextBlockText {
