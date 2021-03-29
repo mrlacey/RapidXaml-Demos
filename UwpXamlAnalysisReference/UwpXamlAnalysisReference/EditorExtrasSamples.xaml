@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="UwpXamlAnalysisReference.EditorExtrasSamples"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:fa="using:FontAwesome.UWP"
+    xmlns:local="using:UwpXamlAnalysisReference"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <Grid>
+        <!--#region Visualizers for symbols and glyphs-->
+
+        <!--  Works with named values of AppBarButton  -->
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Icon="Accept" />
+                <AppBarButton Icon="NewFolder" />
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+
+        <!--  Works with named values of SymbolIcon  -->
+        <SymbolIcon Symbol="Account" />
+        <SymbolIcon Symbol="World" />
+
+        <!--  Works with FontIcon, including specific fonts  -->
+        <FontIcon Glyph="&#xe1cf;" />
+        <FontIcon FontFamily="Wingdings" Glyph="&#xff;" />
+
+        <!--  Works with a single unicode value anywhere, including specific fonts  -->
+        <Button Content="&#xe1ce;" />
+        <TextBlock FontFamily="Wingdings" Text="&#xef;" />
+
+        <!--  Also works with FontAwesome, Also on WPF  -->
+        <fa:FontAwesome Icon="Music" />
+        <fa:FontAwesome Icon="Twitter" />
+
+        <!--#endregion-->
+    </Grid>
+</Page>
