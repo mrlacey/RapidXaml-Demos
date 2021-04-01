@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFXamlAnalysisReference.ImagePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <!-- automation/accessibility checks-->
+            
+            <!-- This needs automation/accessibility support -->
+            <Image Source="background.png" />
+
+            <!-- This is all good -->
+            <Image Source="background.png" AutomationProperties.Name="Set this to something meaningful" />
+
+            <!-- This is all good -->
+            <Image Source="background.png" AutomationProperties.IsInAccessibleTree="false" />
+
+            <!-- Don't want if AutomationId is specified -->
+            <Image Source="background.png" AutomationId="BackgroundImage" />
+
+            <!-- Don't want if HelpText is specified -->
+            <Image Source="background.png" AutomationProperties.HelpText="An amazing background image" />
+
+            <!-- Don't want if HelpText is specified -->
+            <Image Source="background.png" AutomationProperties.LabeledBy="BackgroundImageDescription" />
+
+            <Label x:Name="BackgroundImageDescription" />
+
+
+            <!-- The following have potentially invalid filenames -->
+
+            <!-- Spaces not allowed -->
+            <Image Source="name with space.png" AutomationProperties.Name="space" />
+
+            <!-- shoudl all be lower case -->
+            <Image Source="MixedCases.png" AutomationProperties.Name="MixedCases" />
+
+            <!-- hyphens not allowed -->
+            <Image Source="Hyphenated-name.png" AutomationProperties.Name="Hyphenated" />
+
+            <!-- direcotry separators supported not allowed -->
+            <Image Source="directory/filename.png" AutomationProperties.Name="Hyphenated" />
+
+            <!-- direcotry separators supported not allowed -->
+            <Image Source="directory\filename.png" AutomationProperties.Name="Hyphenated" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

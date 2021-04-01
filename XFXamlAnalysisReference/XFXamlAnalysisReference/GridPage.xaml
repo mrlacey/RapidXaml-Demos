@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFXamlAnalysisReference.GridPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <!-- Use of an undefined Row -->
+            <Grid >
+                <Label Grid.Row="2" />
+            </Grid>
+
+            <Grid RowDefinitions="*,Auto">
+                <!-- This row is defined -->
+                <Label Grid.Row="1" />
+                <!-- This row is not defined -->
+                <Label Grid.Row="3" />
+            </Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <!-- This row is defined -->
+                <Label Grid.Row="1" />
+                <!-- This row is not defined -->
+                <Label Grid.Row="4"  />
+            </Grid>
+
+            <!-- Use of an undefined Column -->
+            <Grid >
+                <Label Grid.Column="2" />
+            </Grid>
+
+            <Grid ColumnDefinitions="*,*">
+                <!-- This Column is defined -->
+                <Label Grid.Column="1" />
+                <!-- This Column is not defined -->
+                <Label Grid.Column="3" />
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions> 
+                <!-- This Column is defined -->
+                <Label Grid.Column="1" />
+                <!-- This Column is not defined -->
+                <Label Grid.Column="4" />
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
