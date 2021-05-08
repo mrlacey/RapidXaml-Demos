@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XFXamlAnalysisReference.MapPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ess="clr-namespace:Xamarin.Essentials;assembly=Xamarin.Essentials"
+    xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
+    <ContentPage.Content>
+        <StackLayout>
+            <maps:Map
+                x:Name="map"
+                IsShowingUser="True"
+                MoveToLastRegionOnLayoutChange="False">
+                <maps:Map.Pins>
+                    <!--  This pin is missing a Label.  -->
+                    <maps:Pin
+                        Address="The city with a boardwalk"
+                        Position="36.9628066,-122.0194722"
+                        Type="Place" />
+                    <!--  This pin has a Label so no warnign is shown.  -->
+                    <maps:Pin
+                        Address="The city with a boardwalk"
+                        Label="Santa Cruz"
+                        Position="36.9628066,-122.0194722"
+                        Type="Place" />
+                </maps:Map.Pins>
+            </maps:Map>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

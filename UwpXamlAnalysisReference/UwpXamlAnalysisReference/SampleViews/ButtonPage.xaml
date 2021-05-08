@@ -28,7 +28,7 @@
             </Button>
 
             <!--  This Button has a bound value for Content and so shouldn't be localized  -->
-            <Button Content="{Binding}" />
+            <Button Content="{x:Bind }" />
 
         </StackPanel>
     </Grid>

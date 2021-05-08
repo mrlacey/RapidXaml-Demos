@@ -1,22 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XFXamlAnalysisReference.LinePage">
+<ContentPage
+    x:Class="XFXamlAnalysisReference.LinePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
         <StackLayout>
-            <!-- if fille is set (regardless of content) it's seggested to remove it -->
-            <Line Y2="120" Fill="Blue" Stroke="Red" />
+            <!--  if fille is set (regardless of content) it's seggested to remove it  -->
+            <Line
+                Fill="Blue"
+                Stroke="Red"
+                Y2="120" />
 
-            <Line X2="80" Y2="120" Fill="#00FF22" Stroke="Red" />
+            <Line
+                Fill="#00FF22"
+                Stroke="Red"
+                X2="80"
+                Y2="120" />
 
-            <Line X2="230" Y2="420" Fill="{StaticResource something}" Stroke="Red" />
+            <Line
+                Fill="{StaticResource something}"
+                Stroke="Red"
+                X2="230"
+                Y2="420" />
 
-            <!-- This line dones't have a fill so not reported -->
-            <Line X1="40"
-                  Y1="0"
-                  X2="0"
-                  Y2="120"
-                  Stroke="Red" />
+            <!--  This line doesn't have a fill so not reported  -->
+            <Line
+                Stroke="Red"
+                X1="40"
+                X2="0"
+                Y1="0"
+                Y2="120" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
