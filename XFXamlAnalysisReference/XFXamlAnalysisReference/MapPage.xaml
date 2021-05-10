@@ -17,7 +17,7 @@
                         Address="The city with a boardwalk"
                         Position="36.9628066,-122.0194722"
                         Type="Place" />
-                    <!--  This pin has a Label so no warnign is shown.  -->
+                    <!--  This pin has a Label so no warning is shown.  -->
                     <maps:Pin
                         Address="The city with a boardwalk"
                         Label="Santa Cruz"
