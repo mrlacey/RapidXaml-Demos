@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFXamlAnalysisReference.SliderPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <!-- Neither Minimum or Maximum specified so no checking done -->
+            <Slider />
+
+            <!-- Only Minimum specified so no checking done -->
+            <Slider Minimum="0" />
+
+            <!-- Only Maximum specified so no checking done -->
+            <Slider Maximum="100" />
+
+            <!-- Min is less than Max so no warning -->
+            <Slider Minimum="0" Maximum="100" />
+
+            <!-- Min is greater than Max so Warning is shown -->
+            <Slider Minimum="200" Maximum="100" />
+
+            <!-- Just having a ThumbColor is fine -->
+            <Slider ThumbColor="Red" />
+
+            <!-- Just having ThumbImageSource is fine -->
+            <Slider ThumbImageSource="ImagineThisExists.png" />
+
+            <!-- Having ThumbColor and ThumbImageSource is BAD! -->
+            <Slider ThumbColor="Red" ThumbImageSource="ImagineThisExists.png" />
+
+            <!-- All the bad things -->
+            <Slider Minimum="200"
+                    Maximum="100"
+                    ThumbColor="Red"
+                    ThumbImageSource="ImagineThisExists.png" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
