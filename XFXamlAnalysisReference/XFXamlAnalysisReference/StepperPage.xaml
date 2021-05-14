@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XFXamlAnalysisReference.StepperPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--  Neither Minimum or Maximum specified so no checking done  -->
+            <Stepper />
+
+            <!--  Only Minimum specified so no checking done  -->
+            <Stepper Minimum="0" />
+
+            <!--  Only Maximum specified so no checking done  -->
+            <Stepper Maximum="100" />
+
+            <!--  Min is less than Max so no warning  -->
+            <Stepper Maximum="100" Minimum="0" />
+
+            <!--  Min is greater than Max so Warning is shown  -->
+            <Stepper Maximum="100" Minimum="200" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    
