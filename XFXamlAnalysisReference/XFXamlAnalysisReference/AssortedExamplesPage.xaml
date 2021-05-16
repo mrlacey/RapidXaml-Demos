@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFXamlAnalysisReference.AssortedExamplesPage">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout Grid.Row="2">
+ 
+                <Label Text="Hello Xamarin.Forms!" />
+                <Button Text="click me" Clicked="Button_Clicked" />
+                <Line Fill="#00FF22" Stroke="Red" X2="80" Y2="120" />
+
+                <Image Source="background.png" />
+                <Entry />
+
+                <Slider Minimum="200" Maximum="100" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+    
