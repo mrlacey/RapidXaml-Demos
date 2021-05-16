@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
         <StackLayout>
-            <!--  if fille is set (regardless of content) it's seggested to remove it  -->
+            <!--  if fill is set (regardless of content) it's suggested to remove it  -->
             <Line
                 Fill="Blue"
                 Stroke="Red"
