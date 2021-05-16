@@ -15,14 +15,26 @@
                     <!--  This pin is missing a Label.  -->
                     <maps:Pin
                         Address="The city with a boardwalk"
-                        Position="36.9628066,-122.0194722"
-                        Type="Place" />
+                        Type="Place">
+                        <maps:Pin.Position>
+                            <x:Arguments>
+                                <x:Double>36.9628066</x:Double>
+                                <x:Double>-122.0194722</x:Double>
+                            </x:Arguments>
+                        </maps:Pin.Position>
+                    </maps:Pin>
                     <!--  This pin has a Label so no warning is shown.  -->
                     <maps:Pin
                         Address="The city with a boardwalk"
                         Label="Santa Cruz"
-                        Position="36.9628066,-122.0194722"
-                        Type="Place" />
+                        Type="Place">
+                        <maps:Pin.Position>
+                            <x:Arguments>
+                                <x:Double>36.9628066</x:Double>
+                                <x:Double>-122.0194722</x:Double>
+                            </x:Arguments>
+                        </maps:Pin.Position>
+                    </maps:Pin>
                 </maps:Map.Pins>
             </maps:Map>
         </StackLayout>
