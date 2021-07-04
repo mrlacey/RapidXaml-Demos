@@ -135,6 +135,10 @@
     <Compile Include="SampleViews\RadioButtonPage.xaml.cs">
       <DependentUpon>RadioButtonPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SampleViews\StylesPage.xaml.cs">
+      <DependentUpon>StylesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\MainViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -173,6 +177,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SampleViews\RadioButtonPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SampleViews\StylesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
