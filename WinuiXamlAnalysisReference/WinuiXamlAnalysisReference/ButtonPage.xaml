@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="WinuiXamlAnalysisReference.ButtonPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinuiXamlAnalysisReference"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+
+            <!--  The following show handling of different types of hardcoded attribute values  -->
+
+            <!--  An inline attribute  -->
+            <Button Content="HardCoded1" />
+
+            <!--  An inline attribute when a Uid has already been assigned  -->
+            <Button x:Uid="MyButton" Content="HardCoded1.5" />
+
+            <!--  Default content  -->
+            <Button>HardCoded2</Button>
+
+            <!--  Attribute as child element  -->
+            <Button>
+                <Button.Content>HardCoded3</Button.Content>
+            </Button>
+
+            <!--  This Button has a bound value for Content and so shouldn't be localized  -->
+            <Button Content="{x:Bind }" />
+
+        </StackPanel>
+    </Grid>
+</Page>
