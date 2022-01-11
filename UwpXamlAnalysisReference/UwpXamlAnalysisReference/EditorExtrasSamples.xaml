@@ -31,10 +31,20 @@
         <!--  Works with a single unicode value anywhere, including specific fonts  -->
         <Button Content="&#xe1ce;" />
         <TextBlock FontFamily="Wingdings" Text="&#xef;" />
+        <TextBlock FontFamily="Wingdings" Text="&#xee;" />
 
         <!--  Also works with FontAwesome, Also on WPF  -->
         <fa:FontAwesome Icon="Music" />
         <fa:FontAwesome Icon="Twitter" />
+
+        <!--  Works with NavigationViewItem  -->
+        <NavigationView>
+            <NavigationView.MenuItems>
+                <NavigationViewItem Icon="Home" />
+                <NavigationViewItem Icon="AllApps" />
+                <NavigationViewItem Icon="Video" />
+            </NavigationView.MenuItems>
+        </NavigationView>
 
         <!--#endregion-->
     </Grid>
